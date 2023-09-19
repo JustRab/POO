@@ -7,12 +7,6 @@
 
 using namespace std;
 
-/*int  multiplicar(int num1, int num2)
-{
-	int multi = num1 * num2;
-	cout << "El resultado de la multiplicaci�n es: " << multi << endl;
-	return multi;
-}*/
 
 int main()
 {
@@ -26,12 +20,17 @@ int main()
     {
         cout << "" << endl;
         cout << "El estado actual del aldeano es: " << villager.tipo << endl;
+        villager.setHealth(100);
+
+        villager.setName("Juan");
+        cout << "Nombre: " << villager.getName() << endl;
+
         cout << "Ingresa el comando (las opciones son): " << endl;
         cout << "rayo		mordida		  mapa		  libro		  composta" << endl;
         cout << "(Puedes curar a un aldeano zombie con una *manzana* o tener una oferta especial si el aldeano llega al nvl 10 con *max*) " << endl;
-        string usuarioCommand; // Cambia el nombre de la variable
+        string usuarioCommand;
         cin >> usuarioCommand;
-        command.comandos(usuarioCommand); // Llama a la función de la clase Command
+        command.comandos(usuarioCommand);
 
         cout << "Quieres aceptar su oferta? (ingresa *aceptar* o *nel*) " << endl;
         string tradeo;
@@ -41,7 +40,7 @@ int main()
             tradeo = "nel";
         }
 
-        command.Trading(tradeo); // Llama a la función de la clase Command
+        command.Trading(tradeo);
 
         command.Experiencia(); // Llama a la función de la clase Command
 
