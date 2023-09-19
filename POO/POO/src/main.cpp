@@ -1,11 +1,6 @@
-#include <iostream>
-#include "Persona.h"
-#include "Rectangle.h"
 #include "Commons.h"
 #include "Aldeano.h"
 #include "commandh.h"
-
-using namespace std;
 
 
 int main()
@@ -42,7 +37,7 @@ int main()
 
         command.Trading(tradeo);
 
-        command.Experiencia(); // Llama a la función de la clase Command
+        command.Experiencia(); 
 
         cout << "Deseas continuar? presiona 0, de lo contrario presiona otro numero mayor a 0" << endl;
         cin >> opc;
