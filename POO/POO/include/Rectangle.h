@@ -1,47 +1,41 @@
 #pragma once
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
-class Rectangle
+class Rectangulo
 {
 public:
-	Rectangle();
-	~Rectangle();
+	Rectangulo();
+	~Rectangulo();
 
-	//This method returns the width of the rectangle
-	float getWidth()
-	{
+	int getWeight() {
 		return ancho;
 	}
 
-	//This method returns the height of the rectangle
-	float getHeight()
-	{
+	int getHeight() {
 		return altura;
 	}
 
-	float getPerimetro()
-	{
-		return perimetro;
-	}
-
-	float getArea()
-	{
+	int getAreas() {
 		return area;
 	}
 
-	void setWidth(float width);
+	int getPerimeter() {
+		return perimetro;
+	}
 
-	void setHeight(float height);
+	void setWeight(int weight);
 
-	void setPerimetro();
+	void setHeight(int height);
 
-	void setArea();
+	void setAreas();
 
+	void setPerimeter();
 
 private:
-	float ancho;
-	float altura;
-	float perimetro;
+	int ancho;
+	int altura;
 	float area;
+	float perimetro;
 };

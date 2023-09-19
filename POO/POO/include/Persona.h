@@ -3,22 +3,21 @@
 #include <string>
 using namespace std;
 
-class Person
+class Persona
 {
 public:
 	//Constructor por defecto
-	Person();
+	Persona();
 	//Destructor
-	~Person();
+	~Persona();
 
 	//This method is in charge of returning a name
 	string getName() {
 		return nombre;
 	}
 
-	//This method is in charge of returning an age value
-	int getAge()
-	{
+	//This method is in charge of returning an age
+	int getAge() {
 		return edad;
 	}
 
@@ -30,4 +29,3 @@ private:
 	string nombre;
 	int edad;
 };
-

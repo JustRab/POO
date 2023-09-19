@@ -1,29 +1,29 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle()
+Rectangulo::Rectangulo()
 {
 }
 
-Rectangle::~Rectangle()
+Rectangulo::~Rectangulo()
 {
 }
 
-void Rectangle::setWidth(float width)
+void Rectangulo::setWeight(int weight)
 {
-	ancho = width;
+	ancho = weight;
 }
 
-void Rectangle::setHeight(float height)
+void Rectangulo::setHeight(int height)
 {
 	altura = height;
 }
 
-void Rectangle::setPerimetro()
+void Rectangulo::setAreas()
 {
-	perimetro = ancho * 2 + altura * 2;
+	area = altura * ancho;
 }
 
-void Rectangle::setArea()
+void Rectangulo::setPerimeter()
 {
-	area = ancho * altura;
+	perimetro = 2 * (altura + ancho);
 }

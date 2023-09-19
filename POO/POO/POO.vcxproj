@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5ba2675c-fd1a-4eab-ba6f-e9b5cd66aed3}</ProjectGuid>
+    <ProjectGuid>{69c681ad-bc1d-4050-bbb0-cdca6de504d0}</ProjectGuid>
     <RootNamespace>POO</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,12 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Person.cpp" />
+    <ClCompile Include="src\Aldeano.cpp" />
+    <ClCompile Include="src\Commandh.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Persona.cpp" />
     <ClCompile Include="src\Rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Person.h" />
+    <ClInclude Include="include\Aldeano.h" />
+    <ClInclude Include="include\commandh.h" />
+    <ClInclude Include="include\Commons.h" />
+    <ClInclude Include="include\Persona.h" />
     <ClInclude Include="include\Rectangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
